@@ -24,3 +24,5 @@ en:
   api:
     invalid_email_or_password: "Invalid email or password"
     success_sign_out: "Sign out success!"
+    error_sign_out: "Sign out error!"
+    update_error: "Update error!"

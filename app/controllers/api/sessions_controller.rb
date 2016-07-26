@@ -22,11 +22,15 @@ class Api::SessionsController < ApplicationController
   end
 
   def destroy
-    sign_out current_user
-    current_user.generate_authentication_token!
-    current_user.save
-    render json: {
-      message: t("api.success_sign_out")
-    }, status: :ok
-  end
+    if current_user.nil?
+      sign_out current_user
+      current_user.generate_authentication_token!
+      current_user.save
+      render json: {
+        message: t("api.success_sign_out")
+      }, status: :ok
+    else
+      render json: {
+        message: t("api.error_sign_out")
+    end
 end

@@ -1,9 +1,9 @@
 #1. User Api
 --------
 
-###Signin
+##Signin
 
-**URL:** /api/session
+**URL:** /10.0.1.89:8080/api/session
 
 **Method: POST**
 
@@ -26,9 +26,9 @@
 
     `{"message": "Invalid email or password"}`
 
-####Sign out
+##Sign out
 
-**URL:** /api/session/id
+**URL:**  10.0.1.89:8080/api/session/id
 
 **Method: DELETE**
 
@@ -44,14 +44,14 @@
 
   * FAILS:
 
-    `{}`
+    `{"message":"Sign out error!"}`
 
 #2. Event Api
 ---------
 
-####List Event
+##List Event
 
-**URL:** /api/events
+**URL:** /10.0.1.89:8080/api/events
 
 **Method: GET**
 
@@ -65,9 +65,9 @@
   * `{"id":"8R9XUNdeVuJD6Ud5Zq0ShQ","title":"CRB","start_date":"2016-07-18 01:00","finish_date":"2016-07-18 02:30","start_repeat":"2016-07-18","end_repeat":null,"color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":null,"exception_type":null,"event_id":15,"exception_time":null,"editable":true,"persisted":true},{"id":"9ARTvbz7aWtnh4gfoOHmew","title":"Framgia CRB Meeting","start_date":"2016-07-27 01:00","finish_date":"2016-07-27 03:00","start_repeat":"2016-07-27","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"iH4tXyvr2Fv-2R4Sh0T4NA","title":"Framgia CRB Meeting","start_date":"2016-08-03 01:00","finish_date":"2016-08-03 03:00","start_repeat":"2016-08-03","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"LR03maeZyV3_BLAOa_M01A","title":"Framgia CRB Meeting","start_date":"2016-08-10 01:00","finish_date":"2016-08-10 03:00","start_repeat":"2016-08-10","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"CU1K0SPjSwdM_ql1glVnRA","title":"Framgia CRB Meeting","start_date":"2016-08-17 01:00","finish_date":"2016-08-17 03:00","start_repeat":"2016-08-17","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"T2k87i8siLkgysSh7CLDgg","title":"Framgia CRB Meeting","start_date":"2016-07-25 01:00","finish_date":"2016-07-25 03:00","start_repeat":"2016-07-25","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"xj3-c7w_ounOQkyoChhmzQ","title":"Framgia CRB Meeting","start_date":"2016-08-01 01:00","finish_date":"2016-08-01 03:00","start_repeat":"2016-08-01","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"NpMaSezQ8qm7QRhNgXecjw","title":"Framgia CRB Meeting","start_date":"2016-08-08 01:00","finish_date":"2016-08-08 03:00","start_repeat":"2016-08-08","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"RLsKq1_fE3tlVMVL3EL1vw","title":"Framgia CRB Meeting","start_date":"2016-08-15 01:00","finish_date":"2016-08-15 03:00","start_repeat":"2016-08-15","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"dwR21hn26vS0gC-HEeamPQ","title":"Framgia CRB Meeting","start_date":"2016-07-25 01:00","finish_date":"2016-07-25 03:00","start_repeat":"2016-07-25","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"e0Mp1N3suV5bDvwsmSKo-Q","title":"Framgia CRB Meeting","start_date":"2016-08-01 01:00","finish_date":"2016-08-01 03:00","start_repeat":"2016-08-01","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"23wct42ZnM-__XaysG_AQg","title":"Framgia CRB Meeting","start_date":"2016-08-08 01:00","finish_date":"2016-08-08 03:00","start_repeat":"2016-08-08","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false},{"id":"gzBXPUk-4_Th5Fynkik_vA","title":"Framgia CRB Meeting","start_date":"2016-08-15 01:00","finish_date":"2016-08-15 03:00","start_repeat":"2016-08-15","end_repeat":"2016-08-19","color_id":10,"calendar":"Nguyen Quang Duy","all_day":false,"repeat_type":"weekly","exception_type":null,"event_id":4,"exception_time":null,"editable":true,"persisted":false}`
 
 
-###Show Detail Event
+##Show Detail Event
 
-**URL:** /api/events/1.json
+**URL:** /10.0.1.89:8080/api/events/1
 
 **METHOD: GET**
 
@@ -79,9 +79,9 @@
 
   * `{id: 1, title: "Framgia CRB", description: "", status: null, color: null, all_day: false, repeat_type: "daily", repeat_every: 1, user_id: 6, calendar_id: 6, start_date: "2016-07-21T09:00:00.000Z", finish_date: "2016-07-21T11:00:00.000Z", start_repeat: "2016-07-21T00:00:00.000Z", end_repeat: "2016-07-26T00:00:00.000Z", exception_time: null, exception_type: null, old_exception_type: null, parent_id: null, place_id: null, chatwork_room_id: null, task_content: null, message_content: null, google_event_id: null, google_calendar_id: null, created_at: "2016-07-21T02:28:37.000Z", updated_at: "2016-07-21T02:28:37.000Z", deleted_at: null, attendees: [{id: 2, email: "nguyen.minh.duc@framgia.com", user_id: 7, event_id: 1, created_at: "2016-07-21T02:28:37.000Z", updated_at: "2016-07-21T02:28:37.000Z"}], users: [{id: 7, name: "Nguyen Minh Duc", email: "nguyen.minh.duc@framgia.com", avatar: null, chatwork_id: null, google_calendar_id: "82poim9ul05t12pg4cc0u0hnvo@group.calendar.google.com", token: null, uid: null, provider: null, expires_at: null, refresh_token: null, email_require: false, created_at: "2016-07-15T11:05:12.000Z", updated_at: "2016-07-15T11:05:12.000Z", auth_token: "GABzxD_jfNHL-MiC7-a6"}], repeat_ons: [ ], days_of_weeks: [ ], event_exceptions: [ ], notification_events: [{id: 2, event_id: 1, notification_id: 1, created_at: "2016-07-21T02:28:37.000Z", updated_at: "2016-07-21T02:28:37.000Z"}], notifications: [{id: 1, notification_type: "Email", created_at: "2016-07-15T11:05:06.000Z", updated_at: "2016-07-15T11:05:06.000Z"}], calendar: {id: 6, user_id: 6, name: "Tran Tien Thanh", description: null, color_id: 10, status: "no_public", is_default: true, created_at: "2016-07-15T11:05:11.000Z", updated_at: "2016-07-15T11:05:11.000Z"}, owner: { id: 6, name: "Tran Tien Thanh", email: "tran.tien.thanh@framgia.com", avatar: null, chatwork_id: null, google_calendar_id: "82poim9ul05t12pg4cc0u0hnvo@group.calendar.google.com", token: null, uid: null, provider: null, expires_at: null, refresh_token: null, email_require: false, created_at: "2016-07-15T11:05:11.000Z", updated_at: "2016-07-21T02:06:59.000Z", auth_token: "_FTuFJ_88PCTM4Bxb-mL"}, event_parent: null, place: null}`
 
-###Create Event
+##Create Event
 
-**URL:** /api/events.json
+**URL:** /10.0.1.89:8080/api/events
 
 **METHOD: POST**
 
@@ -106,9 +106,10 @@
 
     `{}`
 
-###Update Event
 
-**URL:** /api/events/id
+##Update Event
+
+**URL:** /10.0.1.89:8080/api/events/id
 
 **Method: PATCH**
 
@@ -131,10 +132,10 @@
 
 * FAILS:
 
-  `{}`
+  `{"message":"Event updated error!"}`
 
 
-###Delete Event
+##Delete Event
 
 **URL:** /api/events/id
 

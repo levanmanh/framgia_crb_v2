@@ -55,7 +55,7 @@ class Api::EventsController < ApplicationController
       render json: {
         text: t("events.flashs.not_updated_because_overlap")
       }, status: :bad_request
-    else
+    elsif
       exception_service = EventExceptionService.new(handle_event, params, argv)
       exception_service.update_event_exception
 
@@ -63,6 +63,9 @@ class Api::EventsController < ApplicationController
         message: t("events.flashs.updated"),
         event: exception_service.new_event.as_json
       }, status: :ok
+    else
+      render json: {
+        message: t("api.update_error")
     end
   end
 
